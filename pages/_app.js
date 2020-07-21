@@ -1,5 +1,6 @@
 import '../styles/index.css'
 
-export default function MyApp({ Component, pageProps }) {
+
+export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />
 }

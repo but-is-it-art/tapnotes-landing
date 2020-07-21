@@ -1,51 +1,52 @@
-import Container from '../components/container'
-import MoreStories from '../components/more-stories'
-import HeroPost from '../components/hero-post'
-import Intro from '../components/intro'
-import Layout from '../components/layout'
-import { getAllPosts } from '../lib/api'
-import Head from 'next/head'
-import { CMS_NAME } from '../lib/constants'
+import Hero from './components/Hero';
+import Nav from './components/nav';
+import Container from './components/container';
+import StockRoom from './components/StockRoom';
+import TapNote from './components/TapNote';
+import Structure from './components/Structure';
+import Community from './components/Community';
+import SwipeableViews from 'react-swipeable-views';
 
-export default function Index({ allPosts }) {
-  const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
+
+function HomePage() {
   return (
     <>
-      <Layout>
-        <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
-        </Head>
-        <Container>
-          <Intro />
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        </Container>
-      </Layout>
+     <Nav/>
+     <section className="bg-grey pt-12 pb-12 md:pb-16 whitespace-pre-line">
+           <Container> 
+            <Hero/>
+          </Container>
+     </section> 
+   
+    <section>
+     <Container>
+      <TapNote/>
+     </Container>
+    </section>
+   
+    <section className="bg-grey pt-12 pb-12 md:pt-16 md:pb-16 whitespace-pre-line">
+     <Container>
+      <Structure/>
+     </Container>
+    </section>
+     
+   <section className=" pt-12 pb-12 md:pt-16 md:pb-16  whitespace-pre-line">
+         <Container> 
+          <StockRoom />
+         </Container>
+      </section>
+    
+    
+    <section className="bg-grey  pt-12 pb-12 md:pt-16 md:pb-16  whitespace-pre-line">
+      <Container>
+        <Community/>
+      </Container>
+    </section>
+    
     </>
   )
 }
 
-export async function getStaticProps() {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'coverImage',
-    'excerpt',
-  ])
 
-  return {
-    props: { allPosts },
-  }
-}
+export default HomePage
+

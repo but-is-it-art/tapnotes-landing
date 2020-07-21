@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport H1 from './components/h1';\n\nfunction AboutPage() {\n  return __jsx(React.Fragment, null, __jsx(\"h5\", null, \"asd\"));\n}\n\n;\nexport default AboutPage;","map":null,"metadata":{},"sourceType":"module"}
