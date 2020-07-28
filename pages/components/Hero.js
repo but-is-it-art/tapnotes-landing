@@ -28,7 +28,7 @@ function Hero() {
         <p className="col-start-7 col-end-11 column  max-w-md">TapNote is an intelligent system that helps you get your <span className="highlight">notes done 80% faster with legal accuracy</span> while fully educating the patient.</p>
       
      </div>
-     <div className="w-4/5 h-64 mx-auto shadow-xl"></div>
+     <div className="w-4/5 h-64 mx-auto shadow-card"></div>
     
     </section>
    

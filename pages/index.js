@@ -3,10 +3,11 @@ import Nav from './components/nav';
 import Container from './components/container';
 import StockRoom from './components/StockRoom';
 import TapNote from './components/TapNote';
-import Structure from './components/Structure';
+import Consent from './components/Consent';
 import Community from './components/Community';
 import SwipeableViews from 'react-swipeable-views';
 import Standalone from './components/Standalone';
+import Standardized from './components/Standardized';
 
 
 function HomePage() {
@@ -20,7 +21,7 @@ function HomePage() {
      </section> 
 
      <section className="bg-grey pt-12 pb-12 md:pb-16 whitespace-pre-line">
-   
+
             <Standalone/>
 
      </section> 
@@ -30,10 +31,16 @@ function HomePage() {
       <TapNote/>
      </Container>
     </section>
+
+    <section className="bg-grey pt-12 pb-12 md:pb-16 whitespace-pre-line">
+
+      <Standardized/>
+
+    </section> 
    
     <section className="bg-grey pt-12 pb-12 md:pt-16 md:pb-16 whitespace-pre-line">
      <Container>
-      <Structure/>
+      <Consent/>
      </Container>
     </section>
      
