@@ -1,15 +1,9 @@
 
 
-function HeroSubSection({ text, title , SVG, svgWidth }){
+function HeroSubSection({ text }){
   return(
      <div className="column" >
-           <div className="pb-5"> 
-             <img src={SVG} className="mx-auto" alt="StockRoom Dental Stock Management Solution" />            
-            </div>          
-
-            <h2 className="text-center pb-3">  {title}  </h2>
-
-            <p className="text-center">
+            <p className="text-left">
             {text}
             </p>        
     </div>
@@ -17,41 +11,7 @@ function HeroSubSection({ text, title , SVG, svgWidth }){
 }
 
 
-function HeroSection(){
-  return(
-    <>
-   
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-       
-      <HeroSubSection text={`Fully indemnifiable notes for the ultimate defence against litigation in just seconds through patient-personalised suggestions that don't require a single keystroke. \n
-These aren't just digitised templates. This is living, learning and fully intelligent system that can help diagnose and treatment plan with certainty.`}          
-              title="TapNote"
-              SVG='/assets/herosvg/tapnotes-orig.svg'
-              svgWidth="79%"
-      />
-      
-      <HeroSubSection text={`Structure AI can autonomously run your practice or corporate group with astounding speed and accuracy to bring you optimised workflows and greater revenue. \n
-Structure can maximise your diary efficiency without human input, monitor lab cases and referrals, predict potential complaints and run audits in seconds.`}
-              title="Structure"
-              SVG='/assets/herosvg/root.svg'
-             svgWidth="100%"
-      />
-      
-      <HeroSubSection text={`The future of dental inventory control has arrived. Fully streamlined and automated inventory tracking using wireless RFID technology. StockRoom will optimise your cashflow, ordering cycle, inventory control and reduce prices using behind the scenes group buying initiatives. \n 
-Stockroom will free up your staff to engage in clinical activities instead of administrative duties.`}
-              title="StockRoom"
-              SVG='/assets/herosvg/stock.svg'
-              svgWidth="70%"
-         />
-      
-      
-      
-      </div>
- 
-    </>
-  )
-  
-}
+
 
 function Hero() {
   return (
@@ -59,9 +19,16 @@ function Hero() {
     
      <section className="top-hero mt-4 md:mt-12">
     
-      <h1 className="text-center pb-2"> <span className="highlight">Aura A.I</span> is redefining <br/>the way you run your dental practice: </h1> 
-      <h3 className="text-center pb-16 section-subhead">With the world's smartest practice management software.</h3>
-      <HeroSection/>
+      <h1 className="text-center pb-2">Tapnote</h1> 
+      <h3 className="text-center pb-16 section-subhead">The reimagined Dental Record</h3>
+      <div className="grid gap-5 grid-cols-1 pb-12 md:gap-10 md:grid-cols-12 md:pb-16">
+       
+         <p className="col-start-3 col-end-7 max-w-md">Fully indemnifiable notes for the ultimate defense against litigation in just seconds through patient-personalised suggestions that don't require a single keystroke.</p>
+    
+        <p className="col-start-7 col-end-11 column  max-w-md">TapNote is an intelligent system that helps you get your <span className="highlight">notes done 80% faster with legal accuracy</span> while fully educating the patient.</p>
+      
+     </div>
+     <div className="w-4/5 h-64 mx-auto shadow-xl"></div>
     
     </section>
    

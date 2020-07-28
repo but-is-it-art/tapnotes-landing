@@ -321,10 +321,7 @@ var _jsxFileName = "E:\\Desktop\\tapnotes-landing\\pages\\components\\Hero.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 function HeroSubSection({
-  text,
-  title,
-  SVG,
-  svgWidth
+  text
 }) {
   return __jsx("div", {
     className: "column",
@@ -334,89 +331,15 @@ function HeroSubSection({
       lineNumber: 5,
       columnNumber: 6
     }
-  }, __jsx("div", {
-    className: "pb-5",
+  }, __jsx("p", {
+    className: "text-left",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6,
-      columnNumber: 12
-    }
-  }, __jsx("img", {
-    src: SVG,
-    className: "mx-auto",
-    alt: "StockRoom Dental Stock Management Solution",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 14
-    }
-  })), __jsx("h2", {
-    className: "text-center pb-3",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 13
-    }
-  }, "  ", title, "  "), __jsx("p", {
-    className: "text-center",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
       columnNumber: 13
     }
   }, text));
-}
-
-function HeroSection() {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
-    className: "grid grid-cols-1 lg:grid-cols-3 gap-4",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 7
-    }
-  }, __jsx(HeroSubSection, {
-    text: `Fully indemnifiable notes for the ultimate defence against litigation in just seconds through patient-personalised suggestions that don't require a single keystroke. \n
-These aren't just digitised templates. This is living, learning and fully intelligent system that can help diagnose and treatment plan with certainty.`,
-    title: "TapNote",
-    SVG: "/assets/herosvg/tapnotes-orig.svg",
-    svgWidth: "79%",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 7
-    }
-  }), __jsx(HeroSubSection, {
-    text: `Structure AI can autonomously run your practice or corporate group with astounding speed and accuracy to bring you optimised workflows and greater revenue. \n
-Structure can maximise your diary efficiency without human input, monitor lab cases and referrals, predict potential complaints and run audits in seconds.`,
-    title: "Structure",
-    SVG: "/assets/herosvg/root.svg",
-    svgWidth: "100%",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 7
-    }
-  }), __jsx(HeroSubSection, {
-    text: `The future of dental inventory control has arrived. Fully streamlined and automated inventory tracking using wireless RFID technology. StockRoom will optimise your cashflow, ordering cycle, inventory control and reduce prices using behind the scenes group buying initiatives. \n 
-Stockroom will free up your staff to engage in clinical activities instead of administrative duties.`,
-    title: "StockRoom",
-    SVG: "/assets/herosvg/stock.svg",
-    svgWidth: "70%",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 7
-    }
-  })));
 }
 
 function Hero() {
@@ -425,7 +348,7 @@ function Hero() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
+      lineNumber: 20,
       columnNumber: 6
     }
   }, __jsx("h1", {
@@ -433,38 +356,56 @@ function Hero() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 22,
       columnNumber: 7
     }
-  }, " ", __jsx("span", {
-    className: "highlight",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62,
-      columnNumber: 41
-    }
-  }, "Aura A.I"), " is redefining ", __jsx("br", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62,
-      columnNumber: 99
-    }
-  }), "the way you run your dental practice: "), __jsx("h3", {
+  }, "Tapnote"), __jsx("h3", {
     className: "text-center pb-16 section-subhead",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 23,
       columnNumber: 7
     }
-  }, "With the world's smartest practice management software."), __jsx(HeroSection, {
+  }, "The reimagined Dental Record"), __jsx("div", {
+    className: "grid gap-5 grid-cols-1 pb-12 md:gap-10 md:grid-cols-12 md:pb-16",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64,
+      lineNumber: 24,
       columnNumber: 7
+    }
+  }, __jsx("p", {
+    className: "col-start-3 col-end-7 max-w-md",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 10
+    }
+  }, "Fully indemnifiable notes for the ultimate defense against litigation in just seconds through patient-personalised suggestions that don't require a single keystroke."), __jsx("p", {
+    className: "col-start-7 col-end-11 column  max-w-md",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 9
+    }
+  }, "TapNote is an intelligent system that helps you get your ", __jsx("span", {
+    className: "highlight",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 121
+    }
+  }, "notes done 80% faster with legal accuracy"), " while fully educating the patient.")), __jsx("div", {
+    className: "w-4/5 h-64 mx-auto shadow-xl",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 6
     }
   })));
 }
