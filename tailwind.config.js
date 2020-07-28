@@ -116,6 +116,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        'lightestgray': '#f6f6f6',
         'lightgray': '#BDBDBD',
         'mediumgray': '#717171', 
         'aurablack': '#333333;',
@@ -139,6 +140,7 @@ module.exports = {
         '8xl': '6.25rem',
       },
       boxShadow: {
+        card: '1px 1px 7px rgba(130, 130, 130, 0.26)',
         small: '0 5px 10px rgba(0, 0, 0, 0.12)',
         medium: '0 8px 30px rgba(0, 0, 0, 0.12)',
       },

@@ -6,6 +6,7 @@ import TapNote from './components/TapNote';
 import Structure from './components/Structure';
 import Community from './components/Community';
 import SwipeableViews from 'react-swipeable-views';
+import Standalone from './components/Standalone';
 
 
 function HomePage() {
@@ -16,6 +17,12 @@ function HomePage() {
            <Container> 
             <Hero/>
           </Container>
+     </section> 
+
+     <section className="bg-grey pt-12 pb-12 md:pb-16 whitespace-pre-line">
+   
+            <Standalone/>
+
      </section> 
    
     <section>
