@@ -8,6 +8,7 @@ import Community from './components/Community';
 import SwipeableViews from 'react-swipeable-views';
 import Standalone from './components/Standalone';
 import Standardized from './components/Standardized';
+import Referral from './components/Referral';
 
 
 function HomePage() {
@@ -45,9 +46,9 @@ function HomePage() {
     </section>
      
    <section className=" pt-12 pb-12 md:pt-16 md:pb-16  whitespace-pre-line">
-         <Container> 
-          <StockRoom />
-         </Container>
+        
+          <Referral/>
+        
       </section>
     
     

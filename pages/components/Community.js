@@ -4,7 +4,7 @@ function Community() {
      <section>
       
       <h1 className="text-center pt-12 md:pt-20 pb-2">Join the Aura community</h1> 
-      <h3 className="text-center pb-12 md:pb-24 comm-subtitle">Say goodbye to the digitised version of pen and paper and meet Aura AI. The 360º practice management system that <span className="highlight">truly takes the stress out of practice management</span> to free up your time, prevent litigation, reduce compliance costs and increase revenue.</h3>
+      <h3 className="text-center pb-12 md:pb-24 comm-subtitle">Wave goodbye to the old and clunky and meet Aura AI: the 360º practice management system that <span className="highlight">brings your practice into the 21st century</span>. It frees up your time, prevents litigation, reduces compliance costs, and increases revenue.</h3>
       
       <div className="grid gap-10 grid-cols-1 md:grid-cols-12">
         <div className="md:col-start-1 md:col-span-6 md:pt-4"> 
@@ -13,7 +13,7 @@ function Community() {
           <img src='/assets/community/com-2.svg' className="mx-auto" alt="StockRoom Dental Stock Management Solution" />            
         </div>
         
-        <div className="md:col-start-7 md:col-span-6"> 
+        <div className="md:col-start-7 md:col-span-6 pt-16"> 
           <h2 className="pb-5 text-left sm:text-center lg:hidden"> Shape the <br/> future with us! </h2>
           <h2 className="pb-5 hidden lg:block"> Shape the future with us! </h2>
           <p> Aura AI is built with the help of a growing community of dentists who want to change the game.</p>
